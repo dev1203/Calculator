@@ -1,0 +1,92 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <style>
+
+        table {
+            width: 200px;
+            height: 100px;
+            background-color: mintcream;
+
+        }
+        #ja{
+            float: right;
+            padding-right: 500px;
+            padding-top: 100px;
+        }
+        input{
+            width: 120px;
+            background-color:white;
+            color: black;
+            border-radius:200px;
+
+            /*height: 0px;*/
+        }
+        #textbox{
+            border-radius: 0px;
+            background-color: white;
+            color: black;
+        }
+        table, th, td {
+
+        }
+        #cis{
+            width: auto;
+        }
+        #main{
+            text-align: left;
+            background-color: black;
+            color: white;
+            width: 190px;
+
+        }
+    </style>
+</head>
+<body>
+<div id="ja">
+    <form name="frm" method="post"><input type="hidden" name="form-name" value="frm">
+        <br>
+        <br>
+        <div id="main" style="
+    width: 390px;
+"></div>
+        <input id="textbox" type="textbox" name="txt" style="
+    width: 390px;
+"><table id="table">
+            <thead>
+            <tr>
+
+
+                <!--<input id="textbox1" type="textbox1" name="txt1"><br>-->
+            </tr><tr><td> <input type="button" name="btn9" value="9" onclick="dis(btn9.value)"></td>
+                <td><input type="button" name="btn8" value="8" onclick="dis(btn8.value)"></td>
+                <td><input type="button" name="btn7" value="7" onclick="dis(btn7.value)"></td>
+            </tr><tr>
+                <td><input type="button" name="btn6" value="6" onclick="dis(btn6.value)"></td>
+                <td><input type="button" name="btn5" value="5" onclick="dis(btn5.value)"></td>
+                <td><input type="button" name="btn4" value="4" onclick="dis(btn4.value)"></td></tr>
+            <tr>
+                <td> <input type="button" name="btn3" value="3" onclick="dis(btn3.value)"></td>
+                <td><input type="button" name="btn2" value="2" onclick="dis(btn2.value)"></td>
+                <td> <input type="button" name="btn1" value="1" onclick="dis(btn1.value)"></td></tr>
+            <tr>
+                <td> <input type="button" name="btn0" value="0" onclick="dis(btn0.value)"></td>
+                <td><input style="background-color: #f57c00" type="button" value="/" onclick="divide()"></td>
+                <td><input style="background-color: #f57c00" type="button" value="*" onclick="multiply()"></td></tr>
+            <tr>
+                <td><input style="background-color: #f57c00" type="button" value="+" onclick="plus()"></td>
+                <td> <input style="background-color: #f57c00" type="button" value="-" onclick="minus()"></td>
+                <td><input style="background-color: #f57c00" type="button" value="=" onclick="eq()" "=""></td></tr>
+            <tr>
+                <td>
+                    <div id="cis">
+                        <input style="background-color: #f57c00" type="button" value="c" onclick="ac()" "=""></div></td></tr>
+
+
+
+            </thead></table>
+    </form></div>
+<script src="calcu.js"></script>
+
+</body></html>
